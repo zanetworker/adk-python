@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>ADK Python Primitives</title>
+  </head>
+  <body>
+    <outline text="ADK Python Core Primitives">
+      <outline text="BaseAgent">
+        <outline text="Foundation class for agents, defining hierarchy, run methods, and callback hooks"/>
+        <outline text="Defines agent hierarchy with parent/sub-agent relationships"/>
+        <outline text="Provides run_async/run_live methods for different interaction modes"/>
+        <outline text="Supports before/after callbacks for extending functionality"/>
+      </outline>
+      <outline text="LlmAgent">
+        <outline text="Implements language model agents with tools, instructions, and agent-to-agent transfers"/>
+        <outline text="Handles model instructions, tools, examples"/>
+        <outline text="Supports agent transfers between parent/child/peer agents"/>
+        <outline text="Configurable with callbacks for model and tool interactions"/>
+        <outline text="Can be configured for controlled input/output schemas"/>
+      </outline>
+      <outline text="BaseTool">
+        <outline text="Abstract class for all agent tools, handling function declarations and LLM integration"/>
+        <outline text="Provides function declaration capabilities for LLM integration"/>
+        <outline text="Handles running tool implementations with given arguments"/>
+        <outline text="Processes LLM requests to inject tool specifications"/>
+      </outline>
+      <outline text="BaseLlm">
+        <outline text="Interface for language model integrations with streaming/non-streaming support"/>
+        <outline text="Abstract interface for making LLM requests"/>
+        <outline text="Supports both streaming and non-streaming content generation"/>
+        <outline text="Extensible for different LLM providers"/>
+      </outline>
+      <outline text="Event">
+        <outline text="Data structure representing agent interactions, tracking content, function calls, and state"/>
+        <outline text="Captures content, function calls, function responses"/>
+        <outline text="Tracks author, timestamp, and branching information"/>
+        <outline text="Maintains state changes through EventActions"/>
+      </outline>
+    </outline>
+  </body>
+</opml>
